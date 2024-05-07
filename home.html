@@ -7,11 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- header -->
-    <div class="flex list-none justify-between bg-gray-500 font-medium ">
+    <!-- <div class="flex list-none justify-between bg-gray-500 font-medium ">
         <div class="flex ml-[20px] items-center">
             <img src="pic/logo01.png" alt="" class="w-[65px] p-[5px]">
             <p class="ml-[5px] text-white">Student <br> Comitee 67</p>
@@ -19,8 +21,44 @@
         <div class="flex items-center pr-[20px]">
             <box-icon name='menu' color='#ffffff' ></box-icon>
         </div>
-    </div>
+    </div> -->
+
 <!-- header -->
+
+
+
+<div class="bg-gradient-to-t h-[100px]">
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-full mx-auto">
+            <div>
+                <img class="w-[65px] cursor-pointer" src="pic/logo01.png" alt="...">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-400%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Products</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Solution</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Resource</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Developers</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+</div>
+  
 
 <!-- slide -->
 <div class="box">
@@ -52,7 +90,6 @@
 <!-- slide -->
 
 <!-- content -->
-
 
 <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 relative">
     <div class="grid grid-cols-1 sm:grid-cols-12 gap-5">

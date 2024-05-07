@@ -1,3 +1,5 @@
+// slider
+
 let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
@@ -38,3 +40,12 @@ window.onresize = function(event) {
     reloadSlider();
 };
 
+
+
+// header
+
+const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
