@@ -49,3 +49,61 @@ const navLinks = document.querySelector('.nav-links')
             e.name = e.name === 'menu' ? 'close' : 'menu'
             navLinks.classList.toggle('top-[9%]')
         }
+
+
+//countdown
+
+ // Set the date we're counting down to
+ var countDownDate = new Date("Jan 1, 2025 00:00:00").getTime();
+ var countDownDate2 = new Date("Dec 1, 2025 00:00:00").getTime();
+ var countDownDate3 = new Date("Apr 1, 2025 00:00:00").getTime();
+
+ // Update the countdown every 1 second
+ var x = setInterval(function() {
+
+     // Get today's date and time
+     var now = new Date().getTime();
+
+     // Find the distance between now and the count down date
+     var distance = countDownDate - now;
+     var distance2 = countDownDate2 - now;
+     var distance3 = countDownDate3 - now;
+
+     // Time calculations for days, hours, minutes and seconds
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+     var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+    //  var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));\
+
+     var days3 = Math.floor(distance3 / (1000 * 60 * 60 * 24));
+    //  var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+     // Display the result in the corresponding elements
+     document.getElementById("days").textContent = days + " " + "days";
+    //  document.getElementById("hours").textContent = hours + " " + "h";
+     
+     document.getElementById("days2").textContent = days2 + " " + "days";
+    //  document.getElementById("hours2").textContent = hours2 + " " + "h";
+
+     document.getElementById("days3").textContent = days3 + " " + "days";
+    //  document.getElementById("hours3").textContent = hours3 + " " + "h";
+
+
+     // If the count down is over, write some text 
+     if (distance < 0) {
+         clearInterval(x);
+         document.getElementById("countdown").innerHTML = "EXPIRED";
+     }
+     else if (distance2 < 0) {
+        clearInterval(x);
+         document.getElementById("countdown").innerHTML = "EXPIRED";
+     }
+     else if (distance3 < 0) {
+        clearInterval(x);
+         document.getElementById("countdown").innerHTML = "EXPIRED";
+     }
+     
+ }, 1000);
+
+    
