@@ -1,7 +1,7 @@
 .box {
     height: 240px;
     background-color: rgb(219, 219, 219);
-    /* background-image: url(pic/header.png); */
+    background-image: url(pic/bg01.png);
 }
 
 .slider{
@@ -21,6 +21,7 @@
     top: 0;
     display: flex;
     transition: 1s;
+    
 }
 .slider .list img{
     width: 427px;
@@ -69,6 +70,7 @@
 .slider .dots li.active{
     width: 30px;
 }
+
 @media screen and (max-width: 768px){
     .slider{
         height: 180px;

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header -->
+    <div class="bg-gradient-to-t h-[100px] ">
+        <header class="bg-white ">
+            <nav class="flex items-center justify-between w-full mx-auto">
+                <div class="flex items-center">
+                    <img class="w-[65px] cursor-pointer" src="pic/logo01.png" alt="...">
+                    <p class="sm:text-[15px] ml-[20px] text-[12px]">Student Committee</p>
+                </div>
+                <div
+                    class=" lg:mr-[-50%] mr-[-30%] nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-400%] md:w-auto  w-full flex items-center px-5">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 justify-between">
+                        <li>
+                            <a class="hover:text-gray-500" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500" href="#">Map</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500" href="#">Class Schedule</a>
+                        </li>
+                        
+                        <li>
+                            <a class="hover:text-gray-500" href="#">More</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+        </header>
+    </div>
+<!-- header -->
+
+<div>
+    <img src="pic/pic_1.png" alt="">
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
