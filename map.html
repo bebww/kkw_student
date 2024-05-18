@@ -14,44 +14,258 @@
 <body>
 
 <!-- header -->
-    <div class="bg-gradient-to-t h-[100px] ">
-        <header class="bg-white ">
-            <nav class="flex items-center justify-between w-full mx-auto">
-                <div class="flex items-center">
-                    <img class="w-[65px] cursor-pointer" src="pic/logo01.png" alt="...">
-                    <p class="sm:text-[15px] ml-[20px] text-[12px]">Student Committee</p>
-                </div>
-                <div
-                    class=" lg:mr-[-50%] mr-[-30%] nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-400%] md:w-auto  w-full flex items-center px-5">
-                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 justify-between">
-                        <li>
-                            <a class="hover:text-gray-500" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-gray-500" href="#">Map</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-gray-500" href="#">Class Schedule</a>
-                        </li>
-                        
-                        <li>
-                            <a class="hover:text-gray-500" href="#">More</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex items-center gap-6">
-                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
-                </div>
-        </header>
-    </div>
+
+<div class="bg-gradient-to-t h-[100px] ">
+    <header class="bg-white ">
+        <nav class="flex items-center justify-between w-full mx-auto">
+            <div class="flex items-center">
+                <img class="w-[65px] cursor-pointer" src="pic/logo01.png" alt="...">
+                <p class="sm:text-[15px] ml-[20px] text-[12px]">Student Committee</p>
+            </div>
+            <div
+                class=" lg:mr-[-50%] mr-[-30%] nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-400%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 justify-between">
+                    <li>
+                        <a class="hover:text-gray-500" href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="map.html">Map</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Class Schedule</a>
+                    </li>
+                    
+                    <li>
+                        <a class="hover:text-gray-500" href="#">More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+</div>
+
+<script>
+    const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+</script>
+
 <!-- header -->
 
-<div>
-    <img src="pic/pic_1.png" alt="">
+<div class="p-[40px] flex justify-center items-center">
+    <img src="pic/map.png" alt="" class="h-auto max-w-full max-h-[900px]">
+</div>
+
+<!-- content -->
+<div class="p-[10px] ">
+<div class="bg-white dark:bg-gray-800  h-full pb-6 sm:pb-8 lg:pb-12 pt-6 sm:pt-8 lg:pt-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="pic/pic.png" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 1</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                <img src="pic/pic.png" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 2</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                <img src="pic/pic.png" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 3</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="pic/pic.png" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 4</span>
+            </div>
+            <!-- image - end -->
+        </div>
+    </div>
+</div>
+<div class="bg-white dark:bg-gray-800 h-full pb-6 sm:pb-8 lg:pb-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="pic/pic.png" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 1</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                <img src="pic/pic.png" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 2</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                <img src="pic/pic.png" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 3</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="pic/pic.png" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 4</span>
+            </div>
+            <!-- image - end -->
+        </div>
+    </div>
+</div>
+<div class="bg-white dark:bg-gray-800 h-full">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="pic/pic.png" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 1</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                <img src="pic/pic.png" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 2</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                <img src="pic/pic.png" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 3</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="pic/pic.png" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">อาคาร 4</span>
+            </div>
+            <!-- image - end -->
+        </div>
+    </div>
+</div>
 </div>
 
 
+<!-- end -->
 
-<script src="script.js"></script>
+<div class="relative w-full h-[300px] mt-[10vh] pl-[40px] p-[20px]">
+    <iframe class="absolute top-0 left-0 w-full h-full"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15307.384363848087!2d102.82541426241218!3d16.432641230110185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228a3b34a21717%3A0x2fbaa1ac4f6cb474!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4LiC4Lit4LiZ4LmB4LiB4LmI4LiZ4Lin4Li04LiX4Lii4Liy4Lii4LiZ!5e0!3m2!1sth!2sth!4v1716053202733!5m2!1sth!2sth"
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+</div>
+
+<div class="box">
+    <div class="mt-[10vh] pl-[40px] p-[20px]">
+        <h2 class="md:text-xl text-base font-semibold bg-white">Contact Us</h2>
+        <h2 class="md:text-xl text-base bg-white">Student Committee 2567</h2>
+
+    <div class="pt-[20px] flex items-center">
+        <box-icon name='facebook-circle' type='logo' size='md' ></box-icon>
+        <a href="https://www.facebook.com/kkw.studentcouncil.official"
+        class="pl-[10px] font-semibold md:text-xl text-base bg-white pr-[30px]">คณะกรรมการนักเรียนโรงเรียน <br> ขอนแก่นวิทยายน </a> 
+    </div>
+    <div class=" flex items-center mt-[10px]">
+        <box-icon type='logo' name='instagram' size='md'></box-icon>
+        <a href="https://www.instagram.com/kkw.student?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        class="pl-[10px] font-semibold md:text-xl text-base bg-white pr-[30px]">kkw.student</a> 
+    </div>
+
+
+</div>
+
 </body>
 </html>
