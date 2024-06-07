@@ -55,7 +55,7 @@ const navLinks = document.querySelector('.nav-links')
 
  // Set the date we're counting down to
  var countDownDate = new Date("Aug 3, 2024 00:00:00").getTime();
- var countDownDate2 = new Date("Oct 10, 2024 00:00:00").getTime();
+ var countDownDate2 = new Date("July 23, 2024 00:00:00").getTime();
  var countDownDate3 = new Date("Oct 10, 2024 00:00:00").getTime();
 
  // Update the countdown every 1 second
