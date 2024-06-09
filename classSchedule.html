@@ -22,24 +22,23 @@
                 <img class="w-[65px] cursor-pointer" src="pic/logo01.png" alt="...">
                 <p class="sm:text-[15px] ml-[20px] text-[12px]">Student Committee</p>
             </div>
-            <div
-                class=" lg:mr-[-50%] mr-[-30%] nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-400%] md:w-auto  w-full flex items-center px-5">
-                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 justify-between">
-                    <li>
-                        <a class="hover:text-gray-500" href="home.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="map.html">Map</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="classSchedule.html">Class Schedule</a>
-                    </li>
-                    
-                    <li>
-                        <a class="hover:text-gray-500" href="more.html">More</a>
-                    </li>
-                </ul>
-            </div>
+        <div
+            class=" lg:mr-[-50%] mr-[-30%] nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-400%] md:w-auto  w-full flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 justify-between">
+                <li>
+                    <a class="hover:text-gray-500" href="home.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="classSchedule.html">Class Schedule</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="university.html">University</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="more.html">More</a>
+                </li>
+            </ul>
+        </div>
             <div class="flex items-center gap-6">
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
@@ -59,7 +58,7 @@
 <div class="max-w-screen-xl mx-auto px-5 mt-10 sm:px-10 md:px-16">
     <div class="border-b mb-5 flex justify-between text-sm">
         <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
-            <a href="#" class="font-semibold inline-block">ม.ต้น</a>
+            <a class="font-semibold inline-block">ตารางเรียน ม.ต้น</a>
         </div>
     </div>
     <div class="flex justify-center mt-10 gap-[4vw] md:gap-[5vw]">
@@ -72,7 +71,7 @@
 <div class="max-w-screen-xl mx-auto px-5 mt-10 sm:px-10 md:px-16">
     <div class="border-b mb-5 flex justify-between text-sm">
         <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
-            <a href="#" class="font-semibold inline-block">ม.ปลาย</a>
+            <a class="font-semibold inline-block">ตารางเรียน ม.ปลาย</a>
         </div>
     </div>
     <div class="flex justify-center mt-10 gap-[4vw] md:gap-[5vw]">
@@ -176,7 +175,7 @@
 <div  class="max-w-screen-xl mx-auto px-5 mt-10 sm:px-10 md:px-16">
     <div class="border-b mb-5 flex justify-between text-sm">
         <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
-            <a href="#" class="font-semibold inline-block">บุคลากร</a>
+            <a  class="font-semibold inline-block">บุคลากร</a>
         </div>
     </div>
     <img src="pic/sci.png" alt="" class="w-auto h-auto">
@@ -185,6 +184,136 @@
     <img src="pic/art.png" alt="" class="w-auto h-auto">
     <img src="pic/pe.png" alt="" class="w-auto h-auto">
 </div>
+
+
+<!-- map -->
+
+<div  class="max-w-screen-xl mx-auto px-5 mt-10 sm:px-10 md:px-16">
+    <div class="border-b mb-5 flex justify-between text-sm">
+        <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
+            <a class="font-semibold inline-block">แผนผังอาคาร</a>
+        </div>
+    </div>
+
+<div class="p-[2vh] flex justify-center items-center">
+    <img src="pic/map.png" alt="" class="h-auto max-w-full max-h-[900px]">
+</div>
+
+<!-- //////////// -->
+
+<div class=" grid cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-5 mt-20 sm:px-10 md:px-16">
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 1</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 2</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 3</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 4</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 5</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 6</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 7</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 8</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 9</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 10</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 11</p>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
 <!-- end -->
 <div class="box">
     <div class="mt-[10vh] pl-[40px] p-[20px]">
